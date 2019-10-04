@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic');
+$color_grey: #b1b1b1;
+$color_ligthgrey: #e1e1e1;
+$color_white: #fff;
+$color-primary: #f7087a;
+$color-blue: #76c2d0;
+$color-darkblue: #003351;
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: $color_grey;
+    &-col {
+        display: flex;
+        align-items: center;
+    }
+    &-top {
+        padding-top: 0.9rem;
+        height: 50px;
+        color: $color_white;
+        font-weight: bold;
+        &__location {
+            text-decoration: underline;
+        }
+        &__email {
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__social {
+            a {
+                text-decoration: none;
+                color: $color_white;
+            }
+        }
+    }
+    &-bottom {
+        height: 100px;
+        font-weight: bold;
+    }
+    &-col:not(:last-child) {
+        border-left: 1px solid $color_grey;
+    }
+    &-nav {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        &__item {
+            list-style: none;
+            text-transform: uppercase;
+            padding: 20px .5rem;
+            &:hover {
+                border-bottom: .3rem $color-primary solid;
+            }
+        }
+    }
+}
+
+.btn {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    color: $color_white;
+    background-color: $color-primary;
+    border-radius: .625rem;
+    font-size: .825rem;
+    cursor: pointer;
+    border: none;
+}
+
+.callback {
+    &-container {
+        text-decoration: none;
+        color: $color-primary;
+    }
+    &-icon {
+        size: 7x;
+        &:hover {
+            transform: rotate(45deg);
+        }
+    }
+    &-phone {
+        &__top {
+            color: $color_grey;
+        }
+    }
+}
+
+.cart {
+    &-icon {
+        color: $color_grey;
+    }
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 6rem;
+    &-container {
+        height: 700px;
+        background: url(bg-main.png) 50% 50% no-repeat;
+    }
+}
+
+.form {
+    width: 400px;
+    & h1 {
+        color: $color-blue;
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin: .5rem 0;
+    }
+    & h2 {
+        color: $color-blue;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin: .5rem 0;
+    }
+    &-radio {}
+}
+
+.radio {
+    &-rectangle {
+        height: 1.2rem;
+        width: 2.1rem;
+    }
+    &-square {
+        height: 1.2rem;
+        width: 1.2rem;
+    }
+    &-pano {
+        height: 1.2rem;
+        width: 3rem;
+    }
+    &-figure {
+        background-color: $color_ligthgrey;
+    }
+    &-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-btn {
+        width: 125px;
+        height: 70px;
+        input {
+            display: none
+        }
+        label {
+            cursor: pointer;
+            padding: 1rem 2rem;
+            background-color: #ffffff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            &:hover>.radio-figure {
+                background-color: $color-blue;
+            }
+            &:hover>.primary-radio__text {
+                color: $color-blue;
+            }
+        }
+    }
+}
+
+.primary-radio {
+    &__text {
+        color: $color_ligthgrey;
+        padding: 0 10px;
+    }
+}
+
+.form-select {
+    height: 2.8rem;
+    margin-top: 1.5rem;
+    background-color: $color_white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    & label {
+        position: absolute;
+        padding-left: 1rem;
+    }
+    & select {
+        position: absolute;
+        left: 20%;
+        width: 80%;
+        border: none;
+    }
+}
+
+.form-choose {
+    height: 144px;
+    background-color: $color_white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+    padding: 3rem;
+    &__text {}
+    &__top {
+        font-size: 1.3rem
+    }
+    &__bottom {}
+    &__icon {
+        color: $color-blue;
+    }
+}
+
+.form-buttons {
+    width: auto;
+    height: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+}
+
+.cost-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px $color_white solid;
+    border-radius: .625rem;
+    width: 55%;
+    &__icon {
+        border-left: 3px $color_white solid;
+    }
+}
+
+.features {
+    &-container {
+        height: 43.75rem;
+        background: url(bg-primary.png) 40% 0% no-repeat;
+        & .container {
+            height: 700px;
+            display: flex;
+            justify-content: flex-end;
+            align-content: center;
+        }
+    }
+    &-box {
+        height: 31.56rem;
+        width: 48.125rem;
+        color: $color-darkblue;
+        align-self: center;
+    }
+    &-items {
+        display: flex;
+    }
+    &-item {
+        padding: 3.43rem 2.18rem 4rem 1.56rem;
+        display: flex;
+        background-color: $color_white;
+        margin: 1px;
+        &__icon {
+            align-self: flex-start;
+        }
+        &__text {
+            padding-left: 1.2rem;
+        }
+        &__title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding-bottom: 2rem;
+        }
+    }
+}
+
+.scroll {
+    &-container {
+        height: 12.5rem;
+        display: flex;
+        margin: 0 -15px;
+        overflow: scroll;
+        & img {
+            width: 300px;
+            height: auto;
+            // position: absolute;
+            // z-index: -1;
+        }
+    }
+    &-hover {
+        &:hover>&__bg {
+            opacity: .8;
+        }
+        position: relative;
+        &__bg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 200px;
+            opacity: 0;
+            transition: opacity .5s;
+            background-color: $color-blue;
+            color: $color_white;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+}

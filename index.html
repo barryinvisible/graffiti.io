@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <div class="container-fluid header">
+        <header class="container">
+            <div class="row justify-content-between header-top">
+                <div class="col-auto header-top__location">Санкт-Петербург</div>
+                <div class="col header-top__email">zakaz@печатьнахолсте.рф</div>
+                <div class="col-auto header-top__social">
+                    <div class="row">
+                        <div class="col-auto"><a href="https://facebook.com/" target="_blank" rel="noreferrer noopener" class="text-white hover:text-primary"><i class="fab fa-facebook-f"></i></a></div>
+                        <div class="col-auto"><a href="https://odnoklassniki.ru/" target="_blank" rel="noreferrer noopener" class="text-white hover:text-primary"><i class="fab fa-odnoklassniki"></i></a></div>
+                        <div class="col-auto"><a href="https://vk.com/" target="_blank" rel="noreferrer noopener" class="text-white hover:text-primary"><i class="fab fa-vk"></i></a></div>
+                        <div class="col-auto"><a href="https://instagram.com/" target="_blank" rel="noreferrer noopener" class="text-white hover:text-primary"><i class="fab fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row justify-content-between align-items-stretch header-bottom">
+                <div class="header-col col-auto">
+                    <img src="logo.png" alt="Логотип">
+                </div>
+                <div class="header-col col-auto">
+                    <ul class="header-nav">
+                        <li class="header-nav__item">Главная</li>
+                        <li class="header-nav__item">Доставка</li>
+                        <li class="header-nav__item">Контакты</li>
+                    </ul>
+                </div>
+                <div class="header-col col-auto">
+                    <button type="button" class="btn">заказать</button>
+                </div>
+                <div class="header-col col-auto">
+                    <a href="#" class="callback-container">
+                        <div class="row justify-content-between align-items-center callback">
+                            <div class="col-auto callback-icon">
+                                <div class="col-auto"><i class="fas fa-mobile-alt fa-2x"></i></div>
+                            </div>
+                            <div class="col-auto callback-phone">
+                                <div class="callback-phone__top">Звоните сейчас</div>
+                                <div class="callback-phone__bottom">8 800 555 35 35</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="header-col col-auto cart-container">
+                    <i class="fas fa-cart-plus fa-2x cart-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid start-container">
+        <div class="container start">
+            <div class="form">
+                <h1>печать на холсте</h1>
+                <h2>с вашим изображением</h2>
+                <div class="form-radio">
+                    <div class="radio-container">
+                        <div class="radio-btn">
+                            <input type="radio" id="radio1">
+                            <label for="radio1" class="radio-hover">
+                                <div class="primary-radio__shape radio-rectangle radio-figure"></div>
+                                <div class="primary-radio__text">Прямоуг.</div>
+                            </label>
+                        </div>
+                        <!-- <div class="radio-test"></div> -->
+                        <div class="radio-btn">
+                            <input type="radio" id="radio1">
+                            <label for="radio1" class="radio-hover">
+                                <div class="primary-radio__shape radio-square radio-figure"></div>
+                                <div class="primary-radio__text">Квадрат</div>
+                            </label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" id="radio1">
+                            <label for="radio1" class="radio-hover">
+                                <div class="primary-radio__shape radio-pano radio-figure"></div>
+                                <div class="primary-radio__text">Панорама</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-select">
+                    <label for="">Размер:</label>
+                    <select name="" id="">
+                        <option value="80x120">80x120</option>
+                        <option value="90x430">90x430</option>
+                        <option value="280x150">280x150</option>
+                    </select>
+                </div>
+                <div class="form-choose">
+                    <div class="row">
+                        <div class="col-auto align-self-center form-choose__icon">
+                            <i class="fas fa-file-upload fa-3x"></i>
+                        </div>
+                        <div class="col form-choose__text">
+                            <div class="form-choose__top">Перетащите сюда изображение</div>
+                            <div class="form-choose__bottom">Или нажмите и выберите файл</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-buttons">
+                    <button class="cost-btn">
+                        <div class="cost-btn__text align-self-center"><span class="cost-btn__text-price">1000</span><span class="cost-btn__text-currency"></span>руб.</span></div>
+                        <div class="cost-btn__icon"><i class="fas fa-cart-plus fa-2x cart-icon"></i></div>
+                    </button>
+                    <button class="btn">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid features-section">
+        <div class="container features-section__container">
+            <div class="features-box">
+                <div class="features-items row row--small-gutter">
+                    <div class="col--v-gutter col-12 col-md-6">
+                        <div class="features-item">
+                            <div class="features-item__icon"><i class="far fa-sticky-note fa-3x"></i></div>
+                            <div class="features-item__text">
+                                <div class="features-item__title">Картонный задник</div>
+                                <div class="features-item__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum magnam facere soluta? Doloremque, distinctio dolore.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col--v-gutter col-12 col-md-6">
+                        <div class="features-item">
+                            <div class="features-item__icon"><i class="fas fa-car fa-3x"></i></div>
+                            <div class="features-item__text">
+                                <div class="features-item__title">Воспользуйтесь доставкой</div>
+                                <div class="features-item__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum magnam facere soluta? Doloremque, distinctio dolore.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col--v-gutter col-12 col-md-6">
+                        <div class="features-item">
+                            <div class="features-item__icon"><i class="fas fa-paint-roller fa-3x"></i></div>
+                            <div class="features-item__text">
+                                <div class="features-item__title">Холст покрывается маслом</div>
+                                <div class="features-item__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum magnam facere soluta? Doloremque, distinctio dolore.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col--v-gutter col-12 col-md-6">
+                        <div class="features-item">
+                            <div class="features-item__icon"><i class="fab fa-pagelines fa-3x"></i></div>
+                            <div class="features-item__text">
+                                <div class="features-item__title">ЭКО материалы</div>
+                                <div class="features-item__article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum magnam facere soluta? Doloremque, distinctio dolore.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="scroll-container">
+            <div class="scroll-hover">
+                    <div class="scroll-hover__bg">
+                        <i class="fas fa-search"></i>
+                    </div>
+                <img src="1.png" alt="">
+            </div>
+            <div class="scroll-hover">
+                    <div class="scroll-hover__bg">
+                        <i class="fas fa-search"></i>
+                    </div>
+                <img src="2.png" alt="">
+            </div>
+            <div class="scroll-hover">
+                    <div class="scroll-hover__bg">
+                        <i class="fas fa-search"></i>
+                    </div>
+                <img src="3.png" alt="">
+            </div>
+            <div class="scroll-hover">
+                    <div class="scroll-hover__bg">
+                        <i class="fas fa-search"></i>
+                    </div>
+                <img src="4.png" alt="">
+            </div>
+            <div class="scroll-hover">
+                    <div class="scroll-hover__bg">
+                        <i class="fas fa-search"></i>
+                    </div>
+                <img src="5.png" alt="">
+            </div>
+            <div class="scroll-hover">
+                    <div class="scroll-hover__bg">
+                        <i class="fas fa-search"></i>
+                    </div>
+                <img src="6.png" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
